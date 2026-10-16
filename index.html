@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Toonmagic AI</title>
+<style>
+body{font-family:Arial;text-align:center;background:#f0e9ff;padding:20px}
+h1{color:#673ab7}
+.box{background:white;padding:24px;border-radius:18px;margin-top:25px}
+input,button{padding:14px;margin:10px;width:85%;border-radius:10px}
+button{background:#673ab7;color:white;border:0;font-size:16px}
+</style>
+</head>
+<body>
+<h1>🎬 Toonmagic AI</h1>
+<p>Create your own cartoon story!</p>
+<div class="box">
+<h2>Make a Cartoon</h2>
+<input id="story" placeholder="Enter your cartoon story">
+<button onclick="makeStory()">Create Story</button>
+<p id="result"></p>
+</div>
+<script>
+function makeStory(){
+let s=document.getElementById('story').value;
+document.getElementById('result').innerText=
+s ? "Your cartoon story: "+s : "Please enter your story first!";
+}
+</script>
+</body>
+</html>
